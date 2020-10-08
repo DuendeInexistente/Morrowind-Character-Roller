@@ -344,6 +344,28 @@ skills = {
 	'Armorer'
 }
 
+religions = {'Tribunal temple' , 'Imperial cult', 'Daedra worship or sixth house'}
+RANDOMRELIGION = religions[math.random(1,3)]
+
+vampires = {'Aundae','Berne','Quarra'}
+RANDOMVAMPIRE = vampires[math.random(1,3)]
+
+houses = {'Redoran','Hlaalu','Telvanni'}
+RANDOMHOUSE = houses[math.random(1,3)]
+
+factions = {
+	RANDOMHOUSE,
+	RANDOMRELIGION,
+	RANDOMVAMPIRE,
+	'Fighters guild',
+	'Mages guild',
+	'Thieves guild',
+	'Blades',
+	'Morag tong',
+	'Imperial Legion'
+}
+
+
 sex = {'Male', 'Female'}
 
 --credit to Merlord for the only shuffling snippet I found that worked:
@@ -430,5 +452,9 @@ print('',shuffled[8])
 print('',shuffled[9])
 print('',shuffled[10])
 
+print('Factions:')
+shuffle(factions)
+print('',shuffled[1])
+print('',shuffled[2])
 --cityrand= math.random(119~190) --No tamriel rebuilt
 print('City:',cities[math.random(1,190)])
