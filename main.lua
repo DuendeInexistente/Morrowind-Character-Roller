@@ -347,7 +347,7 @@ skills = {
 religions = {'Tribunal temple' , 'Imperial cult', 'Daedra worship or sixth house'}
 RANDOMRELIGION = religions[math.random(1,3)]
 
-vampires = {'Aundae','Berne','Quarra'}
+vampires = {'Aundae (Vampires)','Berne (Vampires)','Quarra (Vampires)'}
 RANDOMVAMPIRE = vampires[math.random(1,3)]
 
 houses = {'Redoran','Hlaalu','Telvanni'}
